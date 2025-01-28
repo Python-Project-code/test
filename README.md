@@ -5,6 +5,10 @@
 2. [Funciones](#schema2)
 3. [Listas y Diccionarios](#schema3)
 4. [Uso de Pandas](#schema4)
+5. [Lectura de datos](#schema5)
+6. [Transformación de DataFrames](#schema6)
+7. [Consultas con SQL](#schema7)
+8. [Uso de funciones map() y filter()](#schema8)
 
 
 
@@ -75,3 +79,57 @@ data = pd.DataFrame({
 })
 ```
 - Escribe un código para eliminar duplicados en un DataFrame y contar cuántos registros únicos quedan.
+
+
+# PySpark
+
+<hr>
+<a name='schema5'></a>
+
+## 5 Lectura de datos
+- Escribe un código para leer un archivo CSV con PySpark y mostrar las primeras 5 filas. El archivo se llama `data.csv`.
+
+
+<hr>
+<a name='schema6'></a>
+
+## 6 Transformación de DataFrames
+- Dado un DataFrame con información de ventas, agrega una nueva columna que calcule el total multiplicando la cantidad por el precio unitario.
+
+<hr>
+<a name='schema7'></a>
+
+## 7 Consultas con SQL
+- Registra el DataFrame anterior como una tabla SQL y escribe una consulta para obtener los productos cuyo precio total (cantidad * precio unitario) sea mayor a 20.
+
+
+<hr>
+<a name='schema8'></a>
+
+## 8 Uso de funciones map() y filter()
+
+- Usa `rdd.map()` para convertir una lista de tuplas de (producto, cantidad) en (producto, "Alto") si la cantidad es mayor a 5 o (producto, "Bajo") en caso contrario.
+
+```python
+data = [("Apple", 5), ("Banana", 10), ("Orange", 3)]
+```
+- Usa `rdd.filter()` para quedarte solo con los productos que tienen una cantidad mayor a 5.
+
+
+
+<hr>
+<a name='schema9'></a>
+
+
+## 9 Agregaciones
+
+- Dado un DataFrame de ventas, calcula el total de ventas por producto utilizando `groupBy` y `agg`.
+
+```python
+
+data = [("Apple", 5), ("Banana", 10), ("Orange", 8), ("Apple", 3)]
+columns = ["Product", "Quantity"]
+df = spark.createDataFrame(data, columns)
+```
+- Usando RDD, calcula el promedio de cantidad por producto en una lista de tuplas.
+
