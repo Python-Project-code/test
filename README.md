@@ -14,9 +14,7 @@
 11. [Manejo de Diccionarios](#schema11)
 12. [Manejo de Cadenas](#schema12)
 13. [Conjuntos](#schema13)
-
-
-8. [Resources](#schemaref)
+14. [Problemas Combinados](#schema14)
 
 
 # Python
@@ -214,3 +212,39 @@ df = spark.createDataFrame(data, columns)
         - Une ambos conjuntos.
 2. Eliminación de Elementos:
 - Dado el conjunto nums = {10, 20, 30, 40}, elimina el número 30 y agrega el número 50.
+
+<hr>
+<a name='schema14'></a>
+
+## 14 Problemas Combinados
+
+
+1. Agrupar Datos:
+- Dada la lista de nombres, crea un diccionario que cuente cuántas veces aparece cada nombre.
+```python
+names = ["Alice", "Bob", "Charlie", "Alice", "Diana", "Bob", "Alice"]
+```
+
+2. Transformar Datos:
+- Dado un diccionario, crea un nuevo diccionario que contenga los promedios de cada estudiante.
+```python
+scores = {"Alice": [90, 85, 88], "Bob": [70, 80, 75], "Charlie": [95, 90, 92]}
+```
+
+3. Combinación de Listas y Diccionarios:
+
+- Dados dos listas, combina las listas en un diccionario.
+
+```python
+keys = ["name", "age", "city"]
+values = ["Alice", 30, "Madrid"]
+```
+
+4. Ordenación Compleja:
+- Dada una lista de tuplas que representan productos:
+```python
+products = [("Laptop", 800), ("Mouse", 25), ("Monitor", 150), ("Keyboard", 50)]
+```
+- Ordena la lista:
+    - Por precio de menor a mayor.
+    - Por nombre alfabéticamente.
