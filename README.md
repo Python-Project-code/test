@@ -201,3 +201,16 @@ df = spark.createDataFrame(data, columns)
 <a name='schema13'></a>
 
 ## 13 Manejo de Conjutos
+
+1. Operaciones Básicas:
+- Dados los conjuntos:
+    ```python
+        set1 = {1, 2, 3, 4}
+        set2 = {3, 4, 5, 6}
+    ```
+    - Realiza las siguientes operaciones:
+        - Encuentra la intersección de ambos conjuntos.
+        - Obtén los elementos únicos que están solo en set1.
+        - Une ambos conjuntos.
+2. Eliminación de Elementos:
+- Dado el conjunto nums = {10, 20, 30, 40}, elimina el número 30 y agrega el número 50.
