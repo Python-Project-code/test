@@ -9,7 +9,11 @@
 6. [Transformación de DataFrames](#schema6)
 7. [Consultas con SQL](#schema7)
 8. [Uso de funciones map() y filter()](#schema8)
-
+9. [Agregaciones](#schema9)
+10. [Manejo de Listas](#schema10)
+11. [Manejo de Diccionarios](#schema11)
+12. [Manejo de Cadenas](#schema12)
+13. [Conjuntos](#schema13)
 
 
 8. [Resources](#schemaref)
@@ -133,3 +137,67 @@ df = spark.createDataFrame(data, columns)
 ```
 - Usando RDD, calcula el promedio de cantidad por producto en una lista de tuplas.
 
+<hr>
+<a name='schema10'></a>
+
+## 10 Manejo de Listas
+
+1. Acceso y Manipulación:
+
+- Dada la lista nums = [10, 20, 30, 40, 50], escribe un código para:
+    - Obtener los tres últimos elementos.
+    - Insertar el número 25 entre 20 y 30.
+    - Eliminar el número 40.
+    - Revertir el orden de la lista.
+
+2. Combinación de Listas:
+
+- Combina las listas list1 = [1, 2, 3] y list2 = [4, 5, 6] en una sola lista. Después, elimina los números que sean mayores a 4.
+
+3. Eliminación de Duplicados:
+
+- Dada la lista nums = [1, 2, 2, 3, 4, 4, 5], elimina los números duplicados manteniendo el orden original.
+
+
+
+
+<hr>
+<a name='schema11'></a>
+
+## 11 Manejo de Diccionarios
+1. Búsqueda y Actualización:
+    - Dado el diccionario, escribe un código para:
+        ``` python
+            data = {"name": "Alice", "age": 30, "city": "Madrid"}
+        ```
+        - Cambiar la ciudad a "Barcelona".
+        - Verificar si la clave "country" está en el diccionario; si no está, agrégala con el valor "Spain".
+        - Obtener todas las claves y valores en formato de lista.
+3. Conteo de Elementos:
+    - Dado el texto text = "data engineering is amazing", cuenta cuántas veces aparece cada letra y almacena el resultado en un diccionario.
+
+4. Filtrar un Diccionario:
+    - Dado el diccionario:
+        ```python
+            products = {"Laptop": 800, "Mouse": 25, "Keyboard": 50, "Monitor": 200}
+        ```
+        - Filtra solo los productos cuyo precio sea menor a 100.
+
+<hr>
+<a name='schema12'></a>
+
+
+## 12 Manejo de Cadenas
+1. Manipulación Básica:
+    - Dada la cadena text = "Python is Fun!", realiza las siguientes operaciones:
+        - Convierte todo el texto a minúsculas.
+        - Reemplaza "Fun" por "Amazing".
+        - Invierte la cadena.
+2. Extracción de Información:
+    - Dada la cadena email = "user@example.com", extrae el nombre de usuario (antes de @) y el dominio (después de @).
+
+
+<hr>
+<a name='schema13'></a>
+
+## 13 Manejo de Conjutos
