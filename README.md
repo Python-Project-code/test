@@ -15,6 +15,8 @@
 12. [Manejo de Cadenas](#schema12)
 13. [Conjuntos](#schema13)
 14. [Problemas Combinados](#schema14)
+15. [Pandas: Limpieza y Transformación de Datos](#schema15)
+16. [ NumPy: Operaciones Numéricas](schema16)
 
 
 # Python
@@ -248,3 +250,26 @@ products = [("Laptop", 800), ("Mouse", 25), ("Monitor", 150), ("Keyboard", 50)]
 - Ordena la lista:
     - Por precio de menor a mayor.
     - Por nombre alfabéticamente.
+
+<hr>
+<a name='schema15'></a>
+
+# 15. Pandas: Limpieza y Transformación de Datos
+- Tienes un DataFrame con información de ventas, pero hay valores nulos y problemas con el formato de las fechas.
+1. Normaliza la columna "Fecha" al formato YYYY-MM-DD.
+2. Llena los valores nulos de la columna "Cantidad" con la mediana.
+3. Reemplaza valores nulos en "Producto" con "Desconocido".
+4. Crea una nueva columna "Total" multiplicando "Precio" * "Cantidad".
+
+[Pandas Ejercicios](pandas-ejercicios.py)
+
+<hr>
+<a name='schema15'></a>
+
+
+# 16. NumPy: Operaciones Numéricas
+- Crea una función que genere una matriz de números aleatorios de tamaño (1000x5), donde cada columna representa datos de ventas de diferentes regiones.
+# 1. Crea la matriz con valores entre 50 y 500.
+# 2. Calcula la media de cada columna.
+# 3. Encuentra la región con la mayor venta promedio.
+# 4. Aplica una normalización Min-Max a cada columna.
