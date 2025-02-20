@@ -17,6 +17,7 @@
 14. [Problemas Combinados](#schema14)
 15. [Pandas: Limpieza y Transformación de Datos](#schema15)
 16. [ NumPy: Operaciones Numéricas](schema16)
+17. [PySpark: Análisis de Datos](#schema17)
 
 
 # Python
@@ -264,12 +265,25 @@ products = [("Laptop", 800), ("Mouse", 25), ("Monitor", 150), ("Keyboard", 50)]
 [Pandas Ejercicios](pandas-ejercicios.py)
 
 <hr>
-<a name='schema15'></a>
+<a name='schema16'></a>
 
 
 # 16. NumPy: Operaciones Numéricas
 - Crea una función que genere una matriz de números aleatorios de tamaño (1000x5), donde cada columna representa datos de ventas de diferentes regiones.
-# 1. Crea la matriz con valores entre 50 y 500.
-# 2. Calcula la media de cada columna.
-# 3. Encuentra la región con la mayor venta promedio.
-# 4. Aplica una normalización Min-Max a cada columna.
+1. Crea la matriz con valores entre 50 y 500.
+2. Calcula la media de cada columna.
+3. Encuentra la región con la mayor venta promedio.
+4. Aplica una normalización Min-Max a cada columna.
+[Numpy Ejerccios](numpy-ejercicios.py)
+
+<hr>
+<a name='schema17'></a>
+
+# 17. PySpark: Análisis de Datos
+
+1. Cuenta cuántos comentarios hay por tipo de sentimiento.
+2. Calcula el promedio de "Likes" por sentimiento.
+3. Filtra los usuarios con más de 10 "Likes".
+4. Crea una nueva columna "Interacción" sumando "Likes" + "Retweets".
+
+[Pyspark Ejercicios](pyspark-ejercicios.py)
